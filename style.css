@@ -1,0 +1,39 @@
+body {
+  background-image: url(img/backgraund.jpg);
+  background-size: cover;
+}
+li{
+  font-family: 'Anton', sans-serif;
+  color: rgb(245, 11, 186);
+}
+h1{
+  font-family: 'Anton', sans-serif;
+  color: rgb(12, 12, 12);
+  text-shadow: 2px 2px 4px #faf8f8;
+}
+p{
+  font-family: 'Anton', sans-serif;
+  color: rgb(15, 15, 15);
+  text-shadow: 2px 2px 4px #fdfcfc;
+}
+h3{
+  font-family: 'Anton', sans-serif;
+  color: rgb(12, 12, 12);
+  text-shadow: 2px 2px 4px #fdf9f9;
+}
+#whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99999;
+}
+#whatsapp-float i {
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+#whatsapp-float a {
+  display: block;
+}
