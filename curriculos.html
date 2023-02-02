@@ -1,127 +1,130 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="referrer" content="origin">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Formulário de Cadastro de Currículos</title>
+    <title>RH magnifica</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/logo.png" width="40" height="40" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="curriculos.html">Cadastrar currículos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sobre.html">Sobre</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                RH Magnifica
+              </a>
+        
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+                >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu""">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="curriculos.html" class="nav-link">Cadastrar currículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sobre.html" class="nav-link">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
     <div class="container h-160">
-      <div class="row h-160 justify-content-center align-items-center">
-        <h1 class="text-center">Formulário de Cadastro de Currículos</h1>
+        <div class="row h-160 justify-content-center align-items-center">
+          <h1 class="text-center">Formulário de Cadastro de Currículos</h1>
+        </div>
+        <div class="container h-160">
+        <form action="https://formsubmit.co/juscelinob20@gmail.com" method="POST">
+          <h3>Identificação Pessoal</h3>
+      
+          <div>
+          <label for="Nome">Nome Completo:</label>
+          <input type="text" id="Nome" name="Nome" required>
       </div>
-      <div class="container h-160">
-      <form action="https://formsubmit.co/your@email.com" method="POST">
-        <h3>Identificação Pessoal</h3>
-    
-        <div>
-        <label for="Nome">Nome Completo:</label>
-        <input type="text" id="Nome" name="Nome" required>
+      <div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+          <label for="Endereço">Endereço:</label>
+          <input type="text" id="Endereço" name="Endereço" required>
+      </div>
+      <div>
+          <label for="Telefone">Telefone:</label>
+          <input type="text" id="Telefone" name="Telefone" required>
+      </div>
+      <div>
+          <h3>Educação</h3>
+      
+          <label for="Instituição de Ensino">Instituição de Ensino:</label>
+          <input type="text" id="Instituição de Ensino" name="Instituição de Ensino" required>
+      </div>
+      <div>
+          <label for="Grau Acadêmico">Grau Acadêmico:</label>
+          <input type="text" id="Grau Acadêmico" name="Grau Acadêmico" required>
+      </div>
+      
+          <h3>Ultima Experiência Profissional</h3>
+          <h6>Caso nenhuma experiências preencha  os campos abaixo com  (sem)</h6>
+      <div>
+          <label for="Nome da Empresa">Nome da Empresa:</label>
+          <input type="text" id="Nome da Empresa" name="Nome da Empresa" required>
+      </div>
+      <div>
+          <label for="Cargo Ocupado">Cargo Ocupado:</label>
+          <input type="text" id="Cargo Ocupado" name="Cargo Ocupado" required>
+      </div>
+          <label for="Responsabilidades">Responsabilidades:</label>
+          <textarea id="Responsabilidades" name="Responsabilidades" required></textarea>
+      </div>
+      
+          <h3>Habilidades</h3>
+      
+     <div>
+          <label for="Habilidades">Conhecimentos e Habilidades:</label>
+          <textarea id="Habilidades" name="Habilidades" required></textarea>
+      </div>
+      
+          <h3>Idiomas</h3>
+      <div>
+          <label for="Idiomas">Línguas Estrangeiras:</label>
+          <input type="text" id="Idiomas" name="Idiomas" required>
+      </div>
+          <h3>Certificações e Treinamentos</h3>
+          <div>
+          <label for="Certificações e Treinamentos">Certificações:</label>
+          <input type="text" id="Certificações e Treinamentos" name="Certificações e Treinamentos" required>
+      </div>
+          <h3>Referências</h3> 
+      <div>
+          <label for="Referências">Referências:</label>
+          <input type="text" id="Referências" name="Referências" required>
+      </div>
+          <h3>Vaga desejada</h3> 
+         
+          <div>
+          <label for="Vaga desejada">Vaga:</label>
+          <input type="text" id="Vaga desejada" name="Vaga desejada" required>
+      </div>
+         
+          <button type="submit">Enviar</button>
+      </form>
     </div>
-    <div>
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-        <label for="Endereço">Endereço:</label>
-        <input type="text" id="Endereço" name="Endereço" required>
-    </div>
-    <div>
-        <label for="Telefone">Telefone:</label>
-        <input type="text" id="Telefone" name="Telefone" required>
-    </div>
-    <div>
-        <h3>Educação</h3>
-    
-        <label for="Instituição de Ensino">Instituição de Ensino:</label>
-        <input type="text" id="Instituição de Ensino" name="Instituição de Ensino" required>
-    </div>
-    <div>
-        <label for="Grau Acadêmico">Grau Acadêmico:</label>
-        <input type="text" id="Grau Acadêmico" name="Grau Acadêmico" required>
-    </div>
-    
-        <h3>Ultima Experiência Profissional</h3>
-        <h6>Caso nenhuma experiências preencha  os campos abaixo com  (sem)</h6>
-    <div>
-        <label for="Nome da Empresa">Nome da Empresa:</label>
-        <input type="text" id="Nome da Empresa" name="Nome da Empresa" required>
-    </div>
-    <div>
-        <label for="Cargo Ocupado">Cargo Ocupado:</label>
-        <input type="text" id="Cargo Ocupado" name="Cargo Ocupado" required>
-    </div>
-        <label for="Responsabilidades">Responsabilidades:</label>
-        <textarea id="Responsabilidades" name="Responsabilidades" required></textarea>
-    </div>
-    
-        <h3>Habilidades</h3>
-    
-   <div>
-        <label for="Habilidades">Conhecimentos e Habilidades:</label>
-        <textarea id="Habilidades" name="Habilidades" required></textarea>
-    </div>
-    
-        <h3>Idiomas</h3>
-    <div>
-        <label for="Idiomas">Línguas Estrangeiras:</label>
-        <input type="text" id="Idiomas" name="Idiomas" required>
-    </div>
-        <h3>Certificações e Treinamentos</h3>
-        <div>
-        <label for="Certificações e Treinamentos">Certificações:</label>
-        <input type="text" id="Certificações e Treinamentos" name="Certificações e Treinamentos" required>
-    </div>
-        <h3>Referências</h3> 
-    <div>
-        <label for="Referências">Referências:</label>
-        <input type="text" id="Referências" name="Referências" required>
-    </div>
-        <h3>Vaga desejada</h3> 
-       
-        <div>
-        <label for="Vaga desejada">Vaga:</label>
-        <input type="text" id="Vaga desejada" name="Vaga desejada" required>
-    </div>
-       
-        <button type="submit">Enviar</button>
-    </form>
-  </div>
-    <a href="https://wa.me/55(aqui seu numero com ddd | tudo junto)?text=Adorei%20seu%20artigo" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
-  z-index:1000;" target="_blank">
-<i style="margin-top:16px" class="fa fa-whatsapp"></i>
-</a>
- 
-          
-    </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
   </body>
 </html>
